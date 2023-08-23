@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .animate-jump-in {
+    @apply animate-jump-in animate-once animate-ease-in-out animate-normal animate-fill-forwards;
+} */
