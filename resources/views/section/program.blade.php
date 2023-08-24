@@ -33,7 +33,7 @@
                     <img src="{{ asset('images/camp-3.jpg') }}" alt="Camping UKMI"
                         class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] sm:-ml-12 -ml-24 sm:-mb84 rotate-6 object-cover object-center aspect-video">
                 </div>
-                <iframe src="https://drive.google.com/file/d/1zzEre0lPne9Sd0j7OO46VyuijHP40DjF/preview"
+                <iframe src="{{ asset('videos/camp-1.mp4') }}"
                     class="sm:w-9/12 border-[12px] border-white rounded w-full h-full sm:h-fit rotate-[2deg] sm:-mt-12 -mt-10 object-cover object-center aspect-video"
                     width="640" height="480" allow="autoplay">
                 </iframe>
