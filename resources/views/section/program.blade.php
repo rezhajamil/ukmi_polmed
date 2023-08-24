@@ -57,5 +57,57 @@
                     class="sm:w-[800px] inline-block border-[12px] border-white rounded w-[300px] scale-90 sm:-mt-16 -mt-12 -rotate-1 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
             </div>
         </div>
+        <div class="flex flex-col gap-6">
+            <span class="text-lg font-bold text-center text-white sm:text-3xl">
+                Pelatihan Peningkatan Kapasitas Diri??
+                <span class="text-yellow-400"> Jelas disini tempatnya..</span>
+            </span>
+            <div class="relative flex flex-col items-center sm:min-h-screen">
+                @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16 -z-[1]'])
+                <iframe class="w-full h-full aspect-video" width="560" height="315"
+                    src="https://www.youtube.com/embed/gF0xailVEYw?si=nDVxudVm8YucPS59" title="Trailer PPI 2019"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+                <span class="text-xs italic text-white sm:text-sm">*Video Trailer PPI (Program Pembekalan Islam) 2019.
+                    Salah satu
+                    pelatihan terbesar di UKMI POLMED setiap tahunnya.
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <span class="text-lg font-bold text-center text-white sm:text-3xl">
+                Segitu aja??
+                <span class="text-yellow-400"> Nggak dong, masih banyak yang lainnya..</span>
+            </span>
+            <div class="relative flex flex-col items-center sm:min-h-screen">
+                @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
+                @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
+                <div class="flex justify-center w-full mt-4 flex-nowrap">
+                    <div class="flex flex-col items-center sm:w-[800px] w-[300px] -mr-12 -rotate-3">
+                        <img src="{{ asset('images/makan-1.jpg') }}" alt="Makan-Makan UKMI"
+                            class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
+                        <span class="text-xs italic text-white sm:text-sm ">
+                            *Makan-makan
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-center sm:w-[800px] w-[300px] -ml-16 rotate-6 z-10">
+                        <img src="{{ asset('images/fotbar-2.jpg') }}" alt="IJABAR UKMI"
+                            class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
+                        <span class="text-xs italic text-white sm:text-sm ">
+                            *Ifthor Jama'i Akbar
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center sm:w-[800px] w-[300px] -rotate-1">
+                    <img src="{{ asset('images/fotbar-3.jpg') }}" alt="KEPUTBAR UKMI"
+                        class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] mt-6 object-cover object-center aspect-video h-[180px] sm:h-[450px]">
+                    <span class="text-xs italic text-white sm:text-sm ">
+                        *Keputrian Akbar
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

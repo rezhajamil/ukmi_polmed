@@ -38,7 +38,7 @@
                 Your browser does not support the video tag.
             </video> --}}
             <iframe class="w-full h-full aspect-video" width="560" height="315"
-                src="https://www.youtube.com/embed/jbVn0vT_kA4?si=xFKVxlduuxmyIVjP" title="YouTube video player"
+                src="https://www.youtube.com/embed/jbVn0vT_kA4?si=xFKVxlduuxmyIVjP" title="Introduction UKMI Polmed"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen>
