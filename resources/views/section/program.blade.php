@@ -24,7 +24,7 @@
             </span>
             <div class="relative flex flex-col items-center sm:min-h-screen">
                 @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
-                @include('components.bg-dot', ['position' => '-left-8 top-8'])
+                @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
                 <div class="flex justify-center">
                     <img src="{{ asset('images/camp-2.jpg') }}" alt="Camping UKMI"
                         class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] sm:-mr-12 -mr-24 sm:-mb-8 -rotate-6 object-cover object-center aspect-video">
@@ -37,6 +37,24 @@
                     class="sm:w-9/12 border-[12px] border-white rounded w-full h-full sm:h-fit rotate-[2deg] sm:-mt-12 -mt-10 object-cover object-center aspect-video"
                     width="640" height="480" allow="autoplay">
                 </iframe>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <span class="text-lg font-bold text-center text-white sm:text-3xl">
+                Mau Olahraga??
+                <span class="text-yellow-400"> Bolehlah adu skill</span>
+            </span>
+            <div class="relative flex flex-col items-center sm:min-h-screen">
+                @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
+                @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
+                <div class="flex justify-center w-full flex-nowrap">
+                    <img src="{{ asset('images/futsal-1.jpg') }}" alt="Olahraga UKMI"
+                        class="sm:w-[600px] inline-block border-[12px] border-white rounded w-[300px] ml-12 -mr-12 -rotate-3 scale-90 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
+                    <img src="{{ asset('images/panahan-1.jpg') }}" alt="Olahraga UKMI"
+                        class="sm:w-[600px] inline-block border-[12px] border-white rounded w-[300px] scale-90 -ml-20 rotate-6 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
+                </div>
+                <img src="{{ asset('images/futsal-2.jpg') }}" alt="Olahraga UKMI"
+                    class="sm:w-[800px] inline-block border-[12px] border-white rounded w-[300px] scale-90 sm:-mt-16 -mt-12 -rotate-1 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
             </div>
         </div>
     </div>
