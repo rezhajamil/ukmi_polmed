@@ -89,14 +89,15 @@
                         <img src="{{ asset('images/makan-1.jpg') }}" alt="Makan-Makan UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
                         <span
-                            class="text-xs italic inline-block w-9/12                          text-left text-white sm:text-sm ">
+                            class="text-xs italic inline-block w-9/12 sm:text-center text-left text-white sm:text-sm ">
                             *Makan-makan
                         </span>
                     </div>
                     <div class="flex flex-col items-center sm:w-[800px] w-[300px] -ml-16 rotate-6 z-10">
                         <img src="{{ asset('images/fotbar-2.jpg') }}" alt="IJABAR UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
-                        <span class="text-xs italic inline-block w-9/12 text-right text-white sm:text-sm ">
+                        <span
+                            class="text-xs italic inline-block w-9/12 text-right sm:text-center text-white sm:text-sm ">
                             *Ifthor Jama'i Akbar
                         </span>
                     </div>

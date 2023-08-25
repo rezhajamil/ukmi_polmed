@@ -2,7 +2,7 @@
 <header x-data="{
     navbarOpen: false
 }" id="header"
-    class="fixed inset-x-0 top-0 z-10 flex items-center w-full py-2 transition-all ease-in-out bg-transparent shadow-yellow-400/30">
+    class="fixed inset-x-0 top-0 z-20 flex items-center w-full py-2 transition-all ease-in-out bg-transparent shadow-yellow-400/30">
     <div class="px-6 bg-transparent">
         <div class="relative flex items-center justify-between -mx-4 bg-transparent">
             {{-- <div class="max-w-full px-4 w-60">
@@ -31,17 +31,24 @@
                         </a>
                         <ul class="block px-1 lg:flex">
                             <li
-                                class="transition duration-500 ease-in-out rounded group hover:bg-gradient-to-br hover:from-teal-800 hover:to-emerald-900 ">
+                                class="transition cursor-pointer duration-500 ease-in-out rounded group hover:bg-gradient-to-br hover:from-teal-800 hover:to-emerald-900 ">
                                 <a href="#intro"
                                     class="flex px-4 py-2 text-lg font-medium text-white transition duration-500 ease-in-out group-hover:text-yellow-400 lg:inline-flex">
                                     Intro
                                 </a>
                             </li>
                             <li
-                                class="transition duration-500 ease-in-out rounded group hover:bg-gradient-to-br hover:from-teal-800 hover:to-emerald-900 ">
+                                class="transition cursor-pointer duration-500 ease-in-out rounded group hover:bg-gradient-to-br hover:from-teal-800 hover:to-emerald-900 ">
                                 <a href="#program"
                                     class="flex px-4 py-2 text-lg font-medium text-white transition duration-500 ease-in-out group-hover:text-yellow-400 lg:inline-flex">
                                     Program
+                                </a>
+                            </li>
+                            <li
+                                class="transition cursor-pointer duration-500 ease-in-out rounded group bg-gradient-to-br from-teal-800 to-emerald-900 ">
+                                <a href="#join"
+                                    class="flex px-4 py-2 text-lg font-medium transition duration-500 ease-in-out text-yellow-400 lg:inline-flex">
+                                    Gabung UKMI
                                 </a>
                             </li>
                         </ul>

@@ -4,6 +4,7 @@
         @include('layouts.navigation')
         @include('section.intro')
         @include('section.program')
+        @include('section.join')
     </div>
 @endsection
 @section('script')
