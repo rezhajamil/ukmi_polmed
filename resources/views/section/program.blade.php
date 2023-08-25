@@ -35,7 +35,7 @@
                 </div>
                 <iframe src="{{ asset('videos/camp-1.mp4') }}"
                     class="sm:w-9/12 border-[12px] border-white rounded w-full h-full sm:h-fit rotate-[2deg] sm:-mt-12 -mt-10 object-cover object-center aspect-video"
-                    width="640" height="480" allow="autoplay">
+                    width="640" height="480">
                 </iframe>
             </div>
         </div>
@@ -67,7 +67,7 @@
                 <iframe class="w-full h-full aspect-video" width="560" height="315"
                     src="https://www.youtube.com/embed/gF0xailVEYw?si=nDVxudVm8YucPS59" title="Trailer PPI 2019"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
                 <span class="text-xs italic text-white sm:text-sm">*Video Trailer PPI (Program Pembekalan Islam) 2019.
@@ -85,17 +85,18 @@
                 @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
                 @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
                 <div class="flex justify-center w-full mt-4 flex-nowrap">
-                    <div class="flex flex-col items-center sm:w-[800px] w-[300px] -mr-12 -rotate-3">
+                    <div class="flex flex-col sm:w-[800px] w-[300px] -mr-12 -rotate-3">
                         <img src="{{ asset('images/makan-1.jpg') }}" alt="Makan-Makan UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
-                        <span class="text-xs italic text-white sm:text-sm ">
+                        <span
+                            class="text-xs italic inline-block w-9/12                          text-left text-white sm:text-sm ">
                             *Makan-makan
                         </span>
                     </div>
                     <div class="flex flex-col items-center sm:w-[800px] w-[300px] -ml-16 rotate-6 z-10">
                         <img src="{{ asset('images/fotbar-2.jpg') }}" alt="IJABAR UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
-                        <span class="text-xs italic text-white sm:text-sm ">
+                        <span class="text-xs italic inline-block w-9/12 text-right text-white sm:text-sm ">
                             *Ifthor Jama'i Akbar
                         </span>
                     </div>
@@ -103,7 +104,7 @@
                 <div class="flex flex-col items-center sm:w-[800px] w-[300px] -rotate-1">
                     <img src="{{ asset('images/fotbar-3.jpg') }}" alt="KEPUTBAR UKMI"
                         class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] mt-6 object-cover object-center aspect-video h-[180px] sm:h-[450px]">
-                    <span class="text-xs italic text-white sm:text-sm ">
+                    <span class="text-xs italic inline-block w-9/12 text-center text-white sm:text-sm ">
                         *Keputrian Akbar
                     </span>
                 </div>
