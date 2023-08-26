@@ -1,6 +1,6 @@
 <div class="w-full min-h-screen pb-4 overflow-x-hidden pt-14 sm:pt-20 sm:pb-10" id="intro">
     <div class="grid w-full grid-cols-1 gap-4 lg:grid-cols-2">
-        <div class="flex flex-col items-center px-2 py-4 sm:py-8 sm:min-h-screen">
+        <div class="flex flex-col items-center px-2 py-4 sm:py-8">
             <h1 class="mb-4 text-3xl font-bold text-center text-white xl:text-5xl">
                 Yuk Kenalan dengan <span class="text-yellow-400">UKMI</span>
             </h1>
@@ -18,7 +18,7 @@
                 berkesan.
             </p>
         </div>
-        <div class="relative flex flex-col items-center sm:min-h-screen">
+        <div class="relative flex flex-col items-center">
             @include('components.bg-dot', ['position' => '-right-8 top-8'])
             @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
             <img src="{{ asset('images/mentoring-2.jpg') }}" alt="Mentoring UKMI"
