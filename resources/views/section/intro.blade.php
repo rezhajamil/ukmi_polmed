@@ -21,12 +21,10 @@
         <div class="relative flex flex-col items-center">
             @include('components.bg-dot', ['position' => '-right-8 top-8'])
             @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
-            <img src="{{ asset('images/mentoring-2.jpg') }}" alt="Mentoring UKMI"
+            <img src="{{ asset('images/compress/mentoring-2.jpg') }}" alt="Mentoring UKMI"
                 class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] rotate-3 object-cover object-center aspect-video">
-            <img src="{{ asset('images/fotbar-1.jpg') }}" alt="PPI UKMI 2018"
-                class="sm:w-[600px] border-[12px] border-white rounded w-[300px] h-[180px] sm:h-[350px] -rotate-[8deg] -mt-16 sm:-mr-12 -mr-6 object-cover object-center aspect-video">
-            <div class="">
-            </div>
+            <img src="{{ asset('images/compress/fotbar-1.jpg') }}" alt="PPI UKMI 2018"
+                class="sm:w-[600px] border-[12px] border-white rounded w-[300px] h-[180px] sm:h-[350px] -rotate-[8deg] -mt-16 sm:-mr-12 -mr-6 object-cover object-center aspect-video low-quality-image">
         </div>
         <div class="flex flex-col items-center gap-6 px-4 my-6 sm:my-4 col-span-full">
             <span class="text-base font-bold text-white sm:text-2xl">

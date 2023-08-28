@@ -11,9 +11,9 @@
             <div class="relative flex flex-col items-center sm:min-h-screen">
                 @include('components.bg-dot-teal', ['position' => '-right-8 top-16'])
                 @include('components.bg-dot-teal', ['position' => '-left-8 top-8'])
-                <img src="{{ asset('images/mentoring-3.jpg') }}" alt="Mentoring UKMI"
+                <img src="{{ asset('images/compress/mentoring-3.jpg') }}" alt="Mentoring UKMI"
                     class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] -rotate-6 object-cover object-center aspect-video">
-                <img src="{{ asset('images/mentoring-1.jpg') }}" alt="Mentoring UKMI"
+                <img src="{{ asset('images/compress/mentoring-1.jpg') }}" alt="Mentoring UKMI"
                     class="sm:w-[600px] border-[12px] border-white rounded w-[300px] h-[180px] sm:h-[350px] rotate-[10deg] -mt-16 sm:-ml-12 -ml-14 object-cover object-center aspect-video">
             </div>
         </div>
@@ -26,11 +26,11 @@
                 @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
                 @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
                 <div class="flex justify-center">
-                    <img src="{{ asset('images/camp-2.jpg') }}" alt="Camping UKMI"
+                    <img src="{{ asset('images/compress/camp-2.jpg') }}" alt="Camping UKMI"
                         class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] sm:-mr-12 -mr-24 sm:-mb-8 -rotate-6 object-cover object-center aspect-video">
-                    <img src="{{ asset('images/camp-1.jpg') }}" alt="Camping UKMI"
+                    <img src="{{ asset('images/compress/camp-1.jpg') }}" alt="Camping UKMI"
                         class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] object-cover object-center aspect-video">
-                    <img src="{{ asset('images/camp-3.jpg') }}" alt="Camping UKMI"
+                    <img src="{{ asset('images/compress/camp-3.jpg') }}" alt="Camping UKMI"
                         class="sm:w-[600px] border-[12px] border-white rounded w-[300px] scale-90 h-[180px] sm:h-[350px] sm:-ml-12 -ml-24 sm:-mb84 rotate-6 object-cover object-center aspect-video">
                 </div>
                 <iframe src="{{ asset('videos/camp-1.mp4') }}"
@@ -48,12 +48,12 @@
                 @include('components.bg-dot-teal', ['position' => '-right-8 bottom-16'])
                 @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
                 <div class="flex justify-center w-full flex-nowrap">
-                    <img src="{{ asset('images/futsal-1.jpg') }}" alt="Olahraga UKMI"
+                    <img src="{{ asset('images/compress/futsal-1.jpg') }}" alt="Olahraga UKMI"
                         class="sm:w-[600px] inline-block border-[12px] border-white rounded w-[300px] ml-12 -mr-12 -rotate-3 scale-90 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
-                    <img src="{{ asset('images/panahan-1.jpg') }}" alt="Olahraga UKMI"
+                    <img src="{{ asset('images/compress/panahan-1.jpg') }}" alt="Olahraga UKMI"
                         class="sm:w-[600px] inline-block border-[12px] border-white rounded w-[300px] scale-90 -ml-20 rotate-6 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
                 </div>
-                <img src="{{ asset('images/futsal-2.jpg') }}" alt="Olahraga UKMI"
+                <img src="{{ asset('images/compress/futsal-2.jpg') }}" alt="Olahraga UKMI"
                     class="sm:w-[800px] inline-block border-[12px] border-white rounded w-[300px] scale-90 sm:-mt-16 -mt-12 -rotate-1 h-[180px] sm:h-[450px] object-cover object-center aspect-video">
             </div>
         </div>
@@ -86,26 +86,26 @@
                 @include('components.bg-dot', ['position' => '-left-8 bottom-8'])
                 <div class="flex justify-center w-full mt-4 flex-nowrap">
                     <div class="flex flex-col sm:w-[800px] w-[300px] -mr-12 -rotate-3">
-                        <img src="{{ asset('images/makan-1.jpg') }}" alt="Makan-Makan UKMI"
+                        <img src="{{ asset('images/compress/makan-1.jpg') }}" alt="Makan-Makan UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
                         <span
-                            class="text-xs italic inline-block w-9/12 sm:text-center text-left text-white sm:text-sm ">
+                            class="inline-block w-9/12 text-xs italic text-left text-white sm:text-center sm:text-sm ">
                             *Makan-makan
                         </span>
                     </div>
                     <div class="flex flex-col items-center sm:w-[800px] w-[300px] -ml-16 rotate-6 z-10">
-                        <img src="{{ asset('images/fotbar-2.jpg') }}" alt="IJABAR UKMI"
+                        <img src="{{ asset('images/compress/fotbar-2.jpg') }}" alt="IJABAR UKMI"
                             class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] object-cover object-center aspect-video h-[180px] sm:h-[450px]">
                         <span
-                            class="text-xs italic inline-block w-9/12 text-right sm:text-center text-white sm:text-sm ">
+                            class="inline-block w-9/12 text-xs italic text-right text-white sm:text-center sm:text-sm ">
                             *Ifthor Jama'i Akbar
                         </span>
                     </div>
                 </div>
                 <div class="flex flex-col items-center sm:w-[800px] w-[300px] -rotate-1">
-                    <img src="{{ asset('images/fotbar-3.jpg') }}" alt="KEPUTBAR UKMI"
+                    <img src="{{ asset('images/compress/fotbar-3.jpg') }}" alt="KEPUTBAR UKMI"
                         class="border-white rounded border-8 sm:border-[12px] sm:w-[800px] w-[300px] mt-6 object-cover object-center aspect-video h-[180px] sm:h-[450px]">
-                    <span class="text-xs italic inline-block w-9/12 text-center text-white sm:text-sm ">
+                    <span class="inline-block w-9/12 text-xs italic text-center text-white sm:text-sm ">
                         *Keputrian Akbar
                     </span>
                 </div>

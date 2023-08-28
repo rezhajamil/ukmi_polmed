@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -80,5 +81,31 @@ class HomeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function join(Request $request)
+    {
+        $request->validate([
+            'nama' => ['required'],
+            'whatsapp' => ['required', 'numeric'],
+            'jenis_kelamin' => ['required'],
+            'alamat' => ['required'],
+            'prodi' => ['required'],
+            'kelas' => ['required'],
+        ]);
+
+        $data = DB::table('join_ukmi')->insert([
+            'nama' => $request->nama,
+            'telepon' => $request->whatsapp,
+            'whatsapp' => $request->whatsapp,
+            'jenis_kelamin' => $request->jenis_kelamin,
+            'alamat' => $request->alamat,
+            'prodi' => $request->prodi,
+            'kelas' => $request->kelas,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        return back();
     }
 }

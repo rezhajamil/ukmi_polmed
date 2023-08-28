@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::resource('home', HomeController::class);
+Route::post('join_ukmi', [HomeController::class, 'join'])->name('join');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

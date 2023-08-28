@@ -16,3 +16,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
+.low-quality-image {
+    image-rendering: -webkit-crisp-edges; /* For Chrome, Safari, and newer versions of Edge */
+    image-rendering: crisp-edges; /* For Firefox */
+    image-rendering: pixelated; /* For other browsers that support the property */
+}

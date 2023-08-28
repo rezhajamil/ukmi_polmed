@@ -43,7 +43,8 @@
             <span class="inline-block w-full mb-4 text-base font-bold text-center text-white sm:text-2xl">
                 FORMULIR PENDAFTARAN
             </span>
-            <form action="" method="GET" class="grid w-full grid-cols-2 gap-4" id="form-join" target="_blank">
+            <form action="{{ route('join') }}" method="POST" class="grid w-full grid-cols-2 gap-4" id="form-join">
+                @csrf
                 <div class="flex flex-col">
                     <label for="nama" class="font-semibold text-white ">Nama Lengkap</label>
                     <input type="text" name="nama" id="nama"
@@ -86,42 +87,3 @@
         </div>
     </div>
 </div>
-@section('script')
-    <script>
-        $(document).ready(function() {
-            $("#form-join").submit(function(event) {
-                // Prevent the default form submission behavior
-                event.preventDefault();
-
-                // Get the form action URL
-                var action = $(this).attr("action");
-
-                // Get the form data as a query string
-                let nama = $("#nama").val();
-                let whatsapp = $("#whatsapp").val();
-                let jenis_kelamin = $("#jenis_kelamin").val();
-                let alamat = $("#alamat").val();
-                let prodi = $("#prodi").val();
-                let kelas = $("#kelas").val();
-                let sapaan = jenis_kelamin == 'laki-laki' ? 'bang' : 'kak';
-                let url = "https://wa.me/";
-
-                let message =
-                    `Assalamualaykum Warahmatullahi Wabarakatuh ${sapaan}.\n\nPerkenalkan nama saya ${nama}. Saya berminat untuk gabung UKMI POLMED ${sapaan}.\nBerikut data saya ${sapaan}\n\nNama : ${nama}\nNomor Whatsapp : ${whatsapp}\nAlamat : ${alamat}\nProdi : ${prodi}\nKelas : ${kelas}\n\nTerimakasih banyak ${sapaan}`;
-
-                message = encodeURIComponent(message);
-
-                if (jenis_kelamin == 'laki-laki') {
-                    url += "6282289138698";
-                } else if (jenis_kelamin == 'perempuan') {
-                    url += '6281264119612';
-                }
-
-                console.log(url + "?text=" + message);
-
-                // Open a new tab/window with the action URL and query string
-                window.open(url + "?text=" + message, "_blank");
-            });
-        })
-    </script>
-@endsection

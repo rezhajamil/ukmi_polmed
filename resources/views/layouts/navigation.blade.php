@@ -45,6 +45,13 @@
                                 </a>
                             </li>
                             <li
+                                class="transition cursor-pointer duration-500 ease-in-out rounded group hover:bg-gradient-to-br hover:from-teal-800 hover:to-emerald-900 ">
+                                <a href="#sosmed"
+                                    class="flex px-4 py-2 text-lg font-medium text-white transition duration-500 ease-in-out group-hover:text-yellow-400 lg:inline-flex">
+                                    Sosial Media
+                                </a>
+                            </li>
+                            <li
                                 class="transition cursor-pointer duration-500 ease-in-out rounded group bg-gradient-to-br from-teal-800 to-emerald-900 ">
                                 <a href="#join"
                                     class="flex px-4 py-2 text-lg font-medium transition duration-500 ease-in-out text-yellow-400 lg:inline-flex">
