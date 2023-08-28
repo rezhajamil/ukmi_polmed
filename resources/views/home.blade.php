@@ -14,7 +14,7 @@
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
+                if ($(this).scrollTop() > 80) {
                     $('#header').addClass(
                         'bg-teal-900 shadow-md').removeClass(
                         'bg-transparent');
