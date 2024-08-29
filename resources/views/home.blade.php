@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('body')
-    <div class="bg-gradient-to-br to-teal-700 from-emerald-900">
+    <div class="bg-gradient-to-br from-emerald-900 to-teal-700">
         @include('layouts.navigation')
         @include('section.intro')
         @include('section.program')
@@ -51,9 +51,9 @@
                 message = encodeURIComponent(message);
 
                 if (jenis_kelamin == 'laki-laki') {
-                    url += "6282289138698";
+                    url += "6281370121790";
                 } else if (jenis_kelamin == 'perempuan') {
-                    url += '6281264119612';
+                    url += '6285935354620';
                 }
 
                 // console.log(url + "?text=" + message);
