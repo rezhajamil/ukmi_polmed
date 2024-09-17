@@ -23,14 +23,12 @@
                     $('#header').removeClass(
                         'bg-teal-900 shadow-md'
                     ).addClass('bg-transparent'); // Remove the class to make navbar background transparent
-
                 }
                 // console.log($(this).scrollTop());
             });
 
             $("#form-join").submit(function(event) {
                 // Prevent the default form submission behavior
-                // event.preventDefault();
 
                 // Get the form action URL
                 var action = $(this).attr("action");
@@ -42,11 +40,12 @@
                 let alamat = $("#alamat").val();
                 let prodi = $("#prodi").val();
                 let kelas = $("#kelas").val();
+                let mentoring = $("#mentoring").is(':checked');
                 let sapaan = jenis_kelamin == 'laki-laki' ? 'bang' : 'kak';
                 let url = "https://wa.me/";
 
                 let message =
-                    `Assalamualaykum Warahmatullahi Wabarakatuh ${sapaan}.\n\nPerkenalkan nama saya ${nama}. Saya berminat untuk gabung UKMI POLMED ${sapaan}.\nBerikut data saya ${sapaan}\n\nNama : ${nama}\nNomor Whatsapp : ${whatsapp}\nAlamat : ${alamat}\nProdi : ${prodi}\nKelas : ${kelas}\n\nTerimakasih banyak ${sapaan}`;
+                    `Assalamualaykum Warahmatullahi Wabarakatuh ${sapaan}.\n\nPerkenalkan nama saya ${nama}. Saya berminat untuk gabung UKMI POLMED ${sapaan}.\nBerikut data saya ${sapaan}\n\nNama : ${nama}\nNomor Whatsapp : ${whatsapp}\nAlamat : ${alamat}\nProdi : ${prodi}\nKelas : ${kelas}\n${mentoring?'Saya juga sudah pernah mentoring sebelumnya':''}\n\nTerimakasih banyak ${sapaan}`;
 
                 message = encodeURIComponent(message);
 
